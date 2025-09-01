@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+                <h1>User Registration Form</h1>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">First Name: </label>
+                    <input type="text" name="name" placeholder="John"><br><br>
+                    <label for="Doe">Last Name: </label>
+                    <input type="text" name="Doe" placeholder="Doe"><br><br>
+                    <label for="DoB">Date of Birth: </label>
+                    <input type="date" name="DoB" id="" placeholder="mm/dd/yy"><br><br>
+                    <label for="age">Age: </label>
+                    <input type="number" name="age" id=""><br><br>
+                    Gender: <br>
+                    <input type="radio" name="Male" id=""> 
+                    <label for="Male">Male </label><br><br>
+                    <input type="radio" name="Female" id=""> 
+                    <label for="Female">Female </label><br><br>
+                    <label for="photo">Profile Photo: </label>
+                    <input type="file" name="photo" id="photo">
+                </fieldset>
+                <fieldset>
+                    <legend>Contact & Address Information</legend>
+                    <label for="email">Email Address: </label>
+                    <input type="email" name="email" id="" placeholder="johndoe@gmail.com"><br><br>
+                    <label for="phone number">Phone Number: </label>
+                    <input type="number" name="phone number" id="" placeholder="0712561710"><br><br>
+                    <label for="website">Personal Website: </label>
+                    <input type="url" name="website" id="website" placeholder="https://example.com"><br><br>
+                    <label for="Amsterdam">Street Address: </label>
+                    <input type="text" name="Amsterdam" id="" placeholder="Amsterdam"><br><br>
+                    <label for="London">City: </label>
+                    <input type="text" name="London" id="" placeholder="London"><br><br>
+                    <label for="country">Country: </label>
+                    <select name="country" id="country">
+                        <option value="kenya">Kenya</option>
+                        <option value="Madagascar">Madagascar</option>
+                        <option value="Fiji">Fiji</option>
+                        <option value="Austria">Austria</option>
+                        <option value="Morocco">Morocco</option>
+                    </select><br><br>
+                    <label for="code">ZIP/Postal Code: </label>
+                    <input type="text" name="code" id="code"><br><br>
+                    <label for="ctime">Preferred Contact Time: </label>
+                    <input type="time" name="ctime" id="ctime">
+                </fieldset>
+                <fieldset>
+                    <legend>Preferences & Interests</legend>
+                    <label for="color">Favorite Color: </label>
+                    <input type="color" name="color" id="color"><br><br>
+                    <label for="level">Experience Level(1-10): </label>
+                    <input type="range" name="level" id="level"><br><br>
+                    <label for="month">Birth Month: </label>
+                    <input type="month" name="month" id="month"><br><br>
+                    <label for="week">Available Week: </label>
+                    <input type="week" name="week" id="aweek"><br><br>
+                    <label for="skeywords">Search Keywords: </label>
+                    <input type="text" name="skeywords" id="skeywords" placeholder="Enter Keywords..."><br><br>
+                    Interests (Select all that apply): <br><br>
+                    <input type="checkbox" name="tech" id="tech">Technology<br><br>
+                    <input type="checkbox" name="sports" id="sport">Sports<br><br>
+                    <input type="checkbox" name="music" id="music">Music<br><br>
+                    <input type="checkbox" name="travel" id="travel">Travel<br><br>
+                    <input type="checkbox" name="read" id="read">Reading<br><br>
+                    <input type="checkbox" name="cook" id="cook">Cooking<br><br>
+                    <label for="E-level">Education Level: </label>
+                   <select name="E-level" id="">
+                        <option value="">Level 3</option>
+                        <option value="">Level 4</option>
+                        <option value="">Level 5</option>
+                        <option value="">Level 6</option>
+                    </select><br><br>
+                    <label for="password">Create Password: </label>
+                    <input type="password" name="password" id="password"><br><br>
+                    <label for="password">Confirm Password: </label>
+                    <input type="password" name="password" id="password">
+                </fieldset>
+                <fieldset>
+                    <legend>Feedback & Additional Information</legend>
+                    Tell us about yourself: <br><br>
+                    <textarea rows="10" cols="50" name="txtarea" id="txtarea" placeholder="Write a brief description about yourself..."></textarea><br><br>
+                    Suggestions for improvement: <br><br>
+                    <textarea name="txtarea" id="txtarea" cols="50" rows="10" placeholder="Any suggestions or feedback"></textarea><br><br>
+                    <label for="rdt">Registration Date & Time:</label>
+                    <input type="datetime-local" name="rdt" id="rdt"><br><br>
+                    <label for="source">How did you hear about us?</label>
+                    <select name="source" id="source">
+                        <option value="">Family member/ friend</option>
+                        <option value="">Online</option>
+                        <option value="">Poster</option>
+                        <option value="">Previous Member</option>
+                    </select><br><br>
+                    <label for="resume">Upload Resume (optional):</label>
+                    <input type="file" name="resume" id="resume"><br><br>
+                    <input type="checkbox" name="Sb" id="">
+                    <label for="Sb">Subscribe to our Newsletter</label> <br><br>
+                    <input type="checkbox" name="T&C" id="">
+                    <label for="T&C">I agree to the Terms and Conditions</label><br><br>
+                    <input type="checkbox" name="PP" id="">
+                    <label for="PP">I agree to the Privacy Policy</label><br><br>
+                </fieldset><br><br>
+                <input type="button" value="Register">
+                <input type="button" value="Clear Form">
+            </form>
+</body>
+</html>
