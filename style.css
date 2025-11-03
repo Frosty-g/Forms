@@ -1,0 +1,206 @@
+:root {
+    --primary-blue: #2563eb;
+    --primary-dark: #1e40af;
+    --primary-light: #3b82f6;
+    --bg-color: #f9fafb;
+    --white: #ffffff;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --border: #d1d5db;
+    --border-focus: #2563eb;
+    --success: #10b981;
+    --error: #ef4444;
+    --warning: #f59e0b;
+    --accent-purple: #8b5cf6;
+    --accent-pink: #ec4899;
+    --radius: 8px;
+    --transition: 0.3s ease;
+    --font-main: "Poppins", sans-serif;
+}
+
+/* ---------- Global Styles ---------- */
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* ---------- Form Container ---------- */
+form {
+    background-color: var(--white);
+    margin: 40px 20px;
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    border-radius: var(--radius);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: box-shadow var(--transition);
+}
+
+form:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-dark);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* ---------- Fieldset ---------- */
+fieldset {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: border-color var(--transition);
+}
+
+fieldset:hover {
+    border-color: var(--primary-blue);
+}
+
+legend {
+    font-weight: bold;
+    color: var(--primary-blue);
+    padding: 0 10px;
+}
+
+/* ---------- Labels & Inputs ---------- */
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+input[type="url"],
+input[type="file"],
+input[type="time"],
+input[type="month"],
+input[type="week"],
+input[type="datetime-local"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 15px;
+    color: var(--text-dark);
+    transition: border-color var(--transition), box-shadow var(--transition);
+    margin-bottom: 15px;
+    background-color: var(--white);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--border-focus);
+    outline: none;
+    box-shadow: 0 0 5px var(--primary-light);
+}
+
+/* ---------- Radio & Checkbox ---------- */
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: var(--primary-blue);
+    transform: scale(1.1);
+    margin-right: 6px;
+}
+
+/* ---------- Range & Color Inputs ---------- */
+input[type="range"] {
+    width: 100%;
+    cursor: pointer;
+}
+
+input[type="color"] {
+    height: 40px;
+    width: 60px;
+    border: none;
+    background: transparent;
+}
+
+/* ---------- Textarea ---------- */
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* ---------- Buttons ---------- */
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    width: 48%;
+    padding: 12px;
+    border: none;
+    border-radius: var(--radius);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color var(--transition), transform var(--transition);
+    color: var(--white);
+}
+
+input[value="Register"] {
+    background-color: var(--primary-blue);
+}
+
+input[value="Register"]:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+input[value="Clear Form"] {
+    background-color: var(--text-light);
+}
+
+input[value="Clear Form"]:hover {
+    background-color: var(--border-focus);
+    transform: translateY(-2px);
+}
+
+/* ---------- Placeholder Text ---------- */
+::placeholder {
+    color: var(--text-light);
+}
+
+/* ---------- Success, Error, Warning ---------- */
+.success {
+    border-color: var(--success);
+}
+.error {
+    border-color: var(--error);
+}
+.warning {
+    border-color: var(--warning);
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 600px) {
+    form {
+    padding: 20px;
+    }
+
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    }
+}
